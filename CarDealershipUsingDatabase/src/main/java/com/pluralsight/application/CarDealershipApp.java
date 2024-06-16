@@ -17,8 +17,16 @@ public class CarDealershipApp {
 
             switch (userSelection)
             {
-                case 1 -> buyOrLeaseReq();
-                case 2 -> findPriceRange();
+                case 0 -> buyOrLeaseReq();
+                case 1 -> findPriceRange();
+                case 2 -> findMakeModel();
+                case 3 -> findYearRange();
+                case 4 -> findVehicleColor();
+                case 5 -> findMileRange();
+                case 6 -> findVehicleType();
+                case 7 -> findAllVehicle();
+                case 8 -> addVehicle();
+                case 9 -> removeVehicle();
                 case 99 -> System.exit(0);
 
             }

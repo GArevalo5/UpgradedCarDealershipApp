@@ -9,3 +9,13 @@ Picture below are of the classes made today (1st screenshot) and The home screen
 ![alt text](<classes in application.jpg>)
 
 ![alt text](HomeView.jpg)
+
+bugs and issues: N/A
+
+6-15-24
+
+Today I have added the getall(), searchByModel() and searchByColor() to MySqlVehicleDao and adding them to VehicleController. I had to update some of the MySql scripts that I used for the database this application uses. Along with editing the vehicle class so that it worked with the database and the new classes. Right now the only ones written are the search by color,type, model and show all cars.
+
+bugs or issues: N/A 
+
+![alt text](mySqlVehicleDaoGettAllFunnction.jpg)
