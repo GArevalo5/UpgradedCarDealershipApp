@@ -1,9 +1,7 @@
 package com.pluralsight.views;
 
-import java.util.Scanner;
+public class HomeView extends ViewBase{
 
-public class Homeview {
-    Scanner userInput = new Scanner(System.in);
 
     public int userSelection()
     {
@@ -24,6 +22,6 @@ public class Homeview {
         System.out.println();
         System.out.print("Enter your option here: ");
 
-        return Integer.parseInt(userInput.nextLine());
+        return Integer.parseInt(scanner.nextLine());
     }
 }

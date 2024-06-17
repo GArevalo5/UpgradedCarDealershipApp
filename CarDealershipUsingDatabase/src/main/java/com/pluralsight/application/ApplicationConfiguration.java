@@ -1,10 +1,11 @@
 package com.pluralsight.application;
 
+import com.pluralsight.controllers.VehicleController;
 import com.pluralsight.services.DealershipDao;
 import com.pluralsight.services.VehicleDao;
 import com.pluralsight.services.mysql.MySqlDealershipDao;
 import com.pluralsight.services.mysql.MySqlVehicleDao;
-import com.pluralsight.views.Homeview;
+import com.pluralsight.views.*;
 import org.apache.commons.dbcp2.BasicDataSource;
 import javax.sql.DataSource;
 import java.io.FileInputStream;
@@ -42,8 +43,17 @@ public class ApplicationConfiguration {
     //daos
     public DealershipDao dealershipDao = new MySqlDealershipDao(dataSource);
     public VehicleDao vehicleDao = new MySqlVehicleDao(dataSource);
+
     //controllers
+    public VehicleController vehicleController = new VehicleController(vehicleDao);
 
     //views
-    public Homeview homeview = new Homeview();
+    public HomeView homeview = new HomeView();
+    public DisplayAllVehiclesView displayAllVehiclesView = new DisplayAllVehiclesView();
+    public VehicleColorView vehicleColorView = new VehicleColorView();
+    public VehicleTypeView vehicleTypeView = new VehicleTypeView();
+    public VehicleModelView vehicleModelView = new VehicleModelView();
+
+
+
 }
